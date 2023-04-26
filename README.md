@@ -8,7 +8,7 @@ Phishing attacks have become increasingly common in the world of cryptocurrencie
 
 ## How It Works
 
-Guardians maintains a blacklist of known phishing websites targeting Suiet users. This blacklist is updated regularly to ensure that users are protected from the latest threats. When a user accesses a website through the Suiet wallet, the URL is checked against the list. If the URL is found on the list, the user is warned and redirected to a safe page.
+Guardians maintains a blocklist of known phishing websites targeting Suiet users. This blocklist is updated regularly to ensure that users are protected from the latest threats. When a user accesses a website through the Suiet wallet, the URL is checked against the list. If the URL is found on the list, the user is warned and redirected to a safe page.
 
 ## Contributing
 
