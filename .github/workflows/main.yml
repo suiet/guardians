@@ -18,4 +18,4 @@ jobs:
           AWS_S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
-          SOURCE_DIR: "./src/" # optional: defaults to entire repository
+          SOURCE_DIR: "./src/"
