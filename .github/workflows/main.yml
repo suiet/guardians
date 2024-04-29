@@ -9,7 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master      
+      - uses: actions/checkout@master
       - name: Validate JSON
         run: |
           for file in ./src/*.json; do
