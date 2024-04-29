@@ -10,11 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master      
-      - name: Install AJV CLI
-        run: npm install -g ajv-cli
-      - name: Validate JSON files
+      - name: Validate JSON
         run: |
-          find ./src/ -name "*.json" | xargs ajv validate
+          for file in ./src/*.json; do
+            echo "Checking $file..."
+            if ! jq empty $file; then
+              echo "Invalid JSON in $file"
+              exit 1
+            fi
+          done
       - uses: jakejarvis/s3-sync-action@master
         with:
           args: --acl public-read --follow-symlinks --delete
