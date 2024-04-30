@@ -10,7 +10,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    permissions: # Job-level permissions configuration starts here
+      contents: write # 'write' access to repository contents
+      pull-requests: write # 'write' access to pull requests
     steps:
       - name: Checkout code
         uses: actions/checkout@v3 # Use the GitHub checkout action to checkout code
@@ -28,6 +30,8 @@ jobs:
 
       - name: Commit changes
         run: |
+          git config --global user.email "github@suiet.app"
+          git config --global user.name "GitHub Actions"
           git add .
           git commit -m "Auto-update from script" || echo "No changes to commit"
           git push
