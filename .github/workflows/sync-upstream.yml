@@ -1,0 +1,33 @@
+name: Sync Upstream
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 * * * *" # Execute every hour
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3 # Use the GitHub checkout action to checkout code
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "14" # Specify Node.js version
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run script
+        run: node scripts/sync-upstream.js # Execute your Node.js script
+
+      - name: Commit changes
+        run: |
+          git add .
+          git commit -m "Auto-update from script" || echo "No changes to commit"
+          git push
