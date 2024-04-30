@@ -1,0 +1,40 @@
+name: Sync Upstream
+
+on:
+  push:
+    branches:
+      - dev
+      - main
+  schedule:
+    - cron: "0 * * * *" # Execute every hour
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions: # Job-level permissions configuration starts here
+      contents: write # 'write' access to repository contents
+      pull-requests: write # 'write' access to pull requests
+    env:
+      GOOGLE_APPLICATION_CREDENTIALS_BASE64: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS_BASE64 }}
+      MYSTEN_SPREEDSHEET_ID: ${{ secrets.MYSTEN_SPREEDSHEET_ID }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3 # Use the GitHub checkout action to checkout code
+
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 8
+      - name: Install dependencies using PNPM
+        run: pnpm install
+
+      - name: Run script
+        run: pnpm sync-upstream # Execute your Node.js script
+
+      - name: Commit changes
+        run: |
+          git config --global user.email "github@suiet.app"
+          git config --global user.name "GitHub Actions"
+          git add .
+          git commit -m "Auto-update from script" || echo "No changes to commit"
+          git push
