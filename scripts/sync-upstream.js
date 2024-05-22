@@ -38,7 +38,7 @@ function extractAddressByType(data, type) {
   // Extract addresses of the specified type
   const addresses = filteredData
     .filter(row => row[0] === type)
-    .map(row => row[1]); // Address is in the second column
+    .map(row => row[2]); // Formatted Address is in the third column
 
   return addresses;
 }
