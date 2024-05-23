@@ -35,9 +35,19 @@ function extractAddressByType(data, type) {
   // Filter out table headers and empty rows
   const filteredData = data.filter(row => row.length !== 0 && row[0] !== 'Type');
 
+  // Define a function to determine if the address meets the format criteria based on type
+  const meetsFormatCriteria = (row) => {
+    if (row[0] === 'NFT' || row[0] === 'Coin' || row[0] === 'Object') {
+      return row[2].includes('::');
+    } else if (row[0] === 'package') {
+      return !row[2].includes('::');
+    }
+    return false;
+  };
+
   // Extract addresses of the specified type
   const addresses = filteredData
-    .filter(row => row[0] === type)
+    .filter(row => row[0] === type && meetsFormatCriteria(row))
     .map(row => row[2]); // Formatted Address is in the third column
 
   return addresses;
