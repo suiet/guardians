@@ -2,9 +2,9 @@
   "blocklist": [
     "0x01d0c025504a231201dbd639a2a3f8d592e106530b2c774eec18e529337faaaa::my_hero::Hero",
     "0x11c21861e28bd0f41098e810d330e791142be4157169666bccb479303751047d::my_minter::Nft",
+    "0x11cf28e2a4349d7222ead75356a48133dbdc2170a8bd2ffff4fc6d14acd6e859::NAVX_AIRDROP_W::NAVX_AIRDROP_PASS",
     "0x13530eb10a4ffe6396d7acc8499f2b3fba7c18ac38f88570fae51823f6a203b4::my_hero::Hero",
     "0x16ab458f4eae99971aa11611abb9f9b699d4c90c768a272a2cd6a9b9ceded2d1::scallop_incentive_pass_w::SCALLOP_INCENTIVE_PASS",
-    "0x11cf28e2a4349d7222ead75356a48133dbdc2170a8bd2ffff4fc6d14acd6e859::NAVX_AIRDROP_W::NAVX_AIRDROP_PASS",
     "0x16d88550b47a553db66d997ead78d8b7b1e67453affc7736ece7fe80fe1db1aa::my_hero::Hero",
     "0x1c2cebb0ff5e15870774d3df91660c46b524d48fd66aeecca44a8c92934f9e1b::my_minter::Nft",
     "0x1d673ed727a33f0c66c75a2cbefd9919aa51de42d39bbea7019cdef35a3317bc::my_minter::Nft",
