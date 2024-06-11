@@ -50,6 +50,9 @@ function extractAddressByType(data, type) {
       } else if (type === "Package") {
         return !row[2].includes("::");
       } else if (type === "Domain") {
+        if (!row[2].startsWith("http://") && !row[2].startsWith("https://")) {
+          row[2] = "http://" + row[2];
+        }
         try {
           const hostname = new URL(row[2]).hostname.toLowerCase();
           row[2] = hostname; // Update row[2] with the hostname
