@@ -6,7 +6,7 @@ on:
       - dev
       - main
   schedule:
-    - cron: "* * * * *" # Execute every minute
+    - cron: "*/10 * * * *" # Execute every 10 minutes
 
 jobs:
   build:
