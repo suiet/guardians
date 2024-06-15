@@ -193,6 +193,7 @@
     "0xdd38f37fa14178a249ef116b687dcf5a05d684197d1e01d02675de68750560ce::my_minter::Nft",
     "0xe21c2eccbb5d43bcee0b4bdfec43b6e8381e024bba40fa9cb92798b983a3925d::SUILEND_REWARD_W::SUILEND_REWARD_VOUCHER",
     "0xe251e09f38fb449fe3e8c15c2bff1d9c86d9f8ce3507c80aad4b4c38441b57f8::SUIECOSYSTEM::NFT",
+    "0xe29792e86d4dfb56355392b7b69b0cc8a18775d888ed8bce0323385125522e2e::reward_nft_w3::REWARD_NFT",
     "0xe362e0c742691e9edd13c161db827d875d6fd82c323b0d0fb2ab734c20546d87::my_minter::Nft",
     "0xe3e53ddc61553a3bb0573b28952dc9f0ceb29abb838bfbdae9c2706aa14fcbee::mint::NFTOBJ",
     "0xe40faf29e50de5ae48e49f40a835c3c10914faa13f36f0eb8b77be3bf1d9fdaa::my_minter::Nft",
@@ -220,7 +221,6 @@
     "0xfc9cbfa5d725576d07d8bd1d3c967e6597c0a7482285591dbf1691c6a52bd149::ticket::NFTOBJ",
     "0xfd29d51c9de5bb94eed1b881569aafda1af7d89290dff663fb672ca45f0cfadc::SUIREWARD_W::SUIREWARD_PASS",
     "0xfeca34b160c1f7e615e1bf0aae29004513d451602cdeaef2d001b9a4231a15fb::my_minter::Nft",
-    "0xff290103075e45efa70ee84703f361ae2e50de4ab6feb1e50636e2d147a535ea::my_minter::Nft",
-    "0xe29792e86d4dfb56355392b7b69b0cc8a18775d888ed8bce0323385125522e2e::reward_nft_w3::REWARD_NFT"
+    "0xff290103075e45efa70ee84703f361ae2e50de4ab6feb1e50636e2d147a535ea::my_minter::Nft"
   ]
 }
