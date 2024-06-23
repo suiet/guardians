@@ -21,6 +21,7 @@
     "0x13538bce7914d6c4e264d608195d5d7dd8f838aa3a41714635c7d84cabb33c65::SUIREWARD_W::SUIREWARD_PASS",
     "0x16ab458f4eae99971aa11611abb9f9b699d4c90c768a272a2cd6a9b9ceded2d1::scallop_incentive_pass_w::SCALLOP_INCENTIVE_PASS",
     "0x16d88550b47a553db66d997ead78d8b7b1e67453affc7736ece7fe80fe1db1aa::my_hero::Hero",
+    "0x173a2694ce9a1f46f140ba145001ad1e66910aa02923ea6e6ba212c6748f58f5::scallop_incentive_pass_w::SCALLOP_INCENTIVE_PASS",
     "0x176fcf4360076e0b34e39ab5c162a84e47bfabbf0bceecee8e587f1c470a7d8b::SUIREWARD_W::SUIREWARD_PASS",
     "0x17bce76ec8e4a43fb9ac099faeb26fd58f99ddca400a36ecf9bc7fc567dc32c5::navi_reward_w0::NAVI_REWARD",
     "0x18ed6394697804fe7e960197a08c019f537db54ed329c956d9f7452d9ba93a93::Navi_Reward_W4::NAVI_REWARD",
@@ -305,7 +306,6 @@
     "0xff1bd3a27eabee3f755071434052e67f7b911d6802424c29833382ce6dd188f3::navi_reward_w6::NAVI_REWARD",
     "0xff290103075e45efa70ee84703f361ae2e50de4ab6feb1e50636e2d147a535ea::my_minter::Nft",
     "0xffbb41b89e0d6eec75bb6892cef0e1912cb4ab0629a38467e2ecacb7fef4cab8::reward_nft_w4::REWARD_NFT",
-    "0xfffbd58cb1dcde0b185711cbe08f6858b1583ec14b70900c165038ee6111d2ac::navi_reward_w13::NAVI_REWARD",
-    "0x173a2694ce9a1f46f140ba145001ad1e66910aa02923ea6e6ba212c6748f58f5::scallop_incentive_pass_w::SCALLOP_INCENTIVE_PASS"
+    "0xfffbd58cb1dcde0b185711cbe08f6858b1583ec14b70900c165038ee6111d2ac::navi_reward_w13::NAVI_REWARD"
   ]
 }
