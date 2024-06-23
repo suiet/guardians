@@ -305,6 +305,7 @@
     "0xff1bd3a27eabee3f755071434052e67f7b911d6802424c29833382ce6dd188f3::navi_reward_w6::NAVI_REWARD",
     "0xff290103075e45efa70ee84703f361ae2e50de4ab6feb1e50636e2d147a535ea::my_minter::Nft",
     "0xffbb41b89e0d6eec75bb6892cef0e1912cb4ab0629a38467e2ecacb7fef4cab8::reward_nft_w4::REWARD_NFT",
-    "0xfffbd58cb1dcde0b185711cbe08f6858b1583ec14b70900c165038ee6111d2ac::navi_reward_w13::NAVI_REWARD"
+    "0xfffbd58cb1dcde0b185711cbe08f6858b1583ec14b70900c165038ee6111d2ac::navi_reward_w13::NAVI_REWARD",
+    "0x173a2694ce9a1f46f140ba145001ad1e66910aa02923ea6e6ba212c6748f58f5::scallop_incentive_pass_w::SCALLOP_INCENTIVE_PASS"
   ]
 }
