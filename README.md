@@ -35,6 +35,8 @@ We encourage the community to contribute to the Guardians repository by reportin
 
 Please provide as much information as possible about the phishing website, including screenshots and any relevant evidence. Our team will review your submission and, if accepted, will update the list accordingly.
 
+You can also submit the data directly to the [form](https://forms.gle/z7TqNYsppWBoUEJP7), but only those who submit through GitHub may be eligible for incentive in the future. 
+
 ## License
 
 Guardians is released under the MIT License. By contributing to the repository, you agree to release your contributions under the same license.
