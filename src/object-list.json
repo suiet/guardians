@@ -333,6 +333,7 @@
     "0xff1bd3a27eabee3f755071434052e67f7b911d6802424c29833382ce6dd188f3::navi_reward_w6::NAVI_REWARD",
     "0xffbb41b89e0d6eec75bb6892cef0e1912cb4ab0629a38467e2ecacb7fef4cab8::reward_nft_w4::REWARD_NFT",
     "0xffc2e420969eb18f5ea8bb285d0dd6ff0aff859e1d0679b081277166355b42cd::ScallopGift::SCALLOPGIFT_TICKET",
-    "0xfffbd58cb1dcde0b185711cbe08f6858b1583ec14b70900c165038ee6111d2ac::navi_reward_w13::NAVI_REWARD"
+    "0xfffbd58cb1dcde0b185711cbe08f6858b1583ec14b70900c165038ee6111d2ac::navi_reward_w13::NAVI_REWARD",
+    "0x6e2d9a166e016afef5b830989684f085e7fda608c79d1917e7b1f9d23d75fa4c::suilendgift5097::SUILEND_REWARD_5097"
   ]
 }
