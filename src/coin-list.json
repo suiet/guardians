@@ -1,6 +1,7 @@
 {
   "blocklist": [
     "0x0144f1ec485fac870507199292c754c1bb302bc6170cb78931360e7f36314696::BucketReward::BUCKETREWARD",
+    "0x020e54dece205ba8dcfc7b04bcafea67a047fff63b83d266e3d19e8bc57142f8::srt::SRT",
     "0x043a9bd4cd74f93e861b8a3138a373e726bb1f7bf8f4f38cde4872f0234ed20b::usdt::USDT",
     "0x0444fefafd19fa7ad1d7688bd96e3d2d4a77896f3ea512f7de7283522c4604db::managed::MANAGED",
     "0x07e3f7d2c3e80a21a25ec6229befcb9b93c5a592a73ee566c86ee7e1831aded8::usdt::USDT",
