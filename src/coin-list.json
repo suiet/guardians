@@ -53,6 +53,7 @@
     "0x41876466a05fdd2d972f2a94bb6ddc5fbecf360b141051784efc8598df1160c1::usdtsui::USDTSUI",
     "0x44eb9716279a538ccc2240e55a0f36ab92efcffa698a95d97ca548176a004dcc::deep::DEEP",
     "0x44eb9716279a538ccc2240e55a0f36ab92efcffa698a95d97ca548176a004dcc::sui::SUI",
+    "0xb7beec4aaadf6e036850afd7bb306c264f8a825d68cf674604a52b82741e3cd6::SuiReward::SUIREWARD",
     "0x483a90eb70bf8f69bea1f7acdf387de0c251adfc019feceb5cf1bf5c60ebfc23::usdc::USDC",
     "0x4a12ed1b17f65491075689a29c4c6c3b3636eeece4dc69586d5310c70e8b7b58::ScallopReward::SCALLOPREWARD",
     "0x4a7ef30138caa6b52da1df043ea73ab7aef04153365c13ca726d3983b7a556d2::BucketReward::BUCKETREWARD",
