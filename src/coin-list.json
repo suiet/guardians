@@ -239,6 +239,7 @@
     "0xe500e878e66193ab3a5687e089f7d029e91a1ac62b722f335555ffa48c75c30c::sui::SUI",
     "0xeaa1c349b49e234eeb173eb2afbf3273a5d27c0d1df6d24bdcd4d2411a3b9ea1::sui::SUI",
     "0xeb2fd157f79629ce7b9c0a81ba36dd6e5192561e71329f16884bcbb9e8675c6e::BucketReward::BUCKETREWARD",
+    "0xebfa63beceaacc495017ae3d68086602970ca8f8b26a0d75414a1bcf6bd6a57c::suirewt::SUIREWT",
     "0xec3cd51fbe693b11e8d120751dbde88fecf65b5555d59f71a7893b37ccf58aa0::ScallopReward::SCALLOPREWARD",
     "0xeee72b011effd2ef7fa24b3bae179e077c79ba83ceaa369a0db8f6582c924589::usdc::USDC",
     "0xeee72b011effd2ef7fa24b3bae179e077c79ba83ceaa369a0db8f6582c924589::usdt::USDT",
