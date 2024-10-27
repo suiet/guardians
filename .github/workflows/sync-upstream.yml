@@ -7,6 +7,14 @@ on:
       - main
   schedule:
     - cron: "*/10 * * * *" # Execute every 10 minutes
+  workflow_dispatch: # allow manually trigger the action
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+      tags:
+        description: 'Mnually Triggered'
 
 jobs:
   build:
