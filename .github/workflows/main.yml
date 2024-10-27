@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch: # allow manually trigger the action
 
 jobs:
   deploy:
