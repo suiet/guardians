@@ -32,7 +32,7 @@ async function fetchUpstreamSheet() {
       extractAddressByType(spreadsheetData, "Object")
     ),
     package: extractAddressByType(spreadsheetData, "Package"),
-    domain: extractAddressByType(spreadsheetData, "Domain"),
+    // domain: extractAddressByType(spreadsheetData, "Domain"),      // disable domain
   };
 }
 
