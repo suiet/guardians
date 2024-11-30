@@ -1,31 +1,35 @@
-name: Upload Artifacts
-
+name: Sync Upstream
 on:
   push:
     branches:
+      - dev
       - main
+  schedule:
+    - cron: "*/10 * * * *" # Execute every 10 minutes
   workflow_dispatch: # allow manually trigger the action
-
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
+    permissions: # Job-level permissions configuration starts here
+      contents: write # 'write' access to repository contents
+      pull-requests: write # 'write' access to pull requests
+    env:
+      GOOGLE_APPLICATION_CREDENTIALS_BASE64: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS_BASE64 }}
+      MYSTEN_SPREEDSHEET_ID: ${{ secrets.MYSTEN_SPREEDSHEET_ID }}
     steps:
-      - uses: actions/checkout@master
-      - name: Validate JSON
-        run: |
-          for file in ./src/*.json; do
-            echo "Checking $file..."
-            if ! jq empty $file; then
-              echo "Invalid JSON in $file"
-              exit 1
-            fi
-          done
-      - uses: jakejarvis/s3-sync-action@master
+      - name: Checkout code
+        uses: actions/checkout@v3 # Use the GitHub checkout action to checkout code
+      - uses: pnpm/action-setup@v3
         with:
-          args: --acl public-read --follow-symlinks --delete
-        env:
-          AWS_S3_BUCKET: ${{ secrets.S3_BUCKET }}
-          AWS_S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
-          SOURCE_DIR: "./src/"
+          version: 8
+      - name: Install dependencies using PNPM
+        run: pnpm install
+      - name: Run script
+        run: pnpm sync-upstream # Execute your Node.js script
+      - name: Commit changes
+        run: |
+          git config --global user.email "github@suiet.app"
+          git config --global user.name "GitHub Actions"
+          git add .
+          git commit -m "Auto-update from script" || echo "No changes to commit"
+          git push
