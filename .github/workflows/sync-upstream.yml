@@ -19,13 +19,19 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3 # Use the GitHub checkout action to checkout code
-      - uses: pnpm/action-setup@v3
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          version: 8
-      - name: Install dependencies using PNPM
-        run: pnpm install
+          python-version: "3.13"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
       - name: Run script
-        run: pnpm sync-upstream # Execute your Node.js script
+        run: python ./app/app.py
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS_BASE64: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS_BASE64 }}
+          MYSTEN_SPREEDSHEET_ID: ${{ secrets.MYSTEN_SPREEDSHEET_ID }}
+          SUIET_SPREEDSHEET_ID: ${{ secrets.SUIET_SPREEDSHEET_ID }}
       - name: Commit changes
         run: |
           git config --global user.email "github@suiet.app"
