@@ -32,7 +32,7 @@ for i in range(len(commits) - 1):
     head_commit = commits[i + 1]
 
     # Get the differences
-    diff_output = subprocess.run(['git', 'diff', f'{base_commit}..{head_commit}', '--', 'src/domain-list.json'], capture_output=True, text=True).stdout
+    diff_output = subprocess.run(['git', 'diff', f'{base_commit}..{head_commit}', '--', 'dist/domain-list.json'], capture_output=True, text=True).stdout
     # Extract new additions and deletions
     for line in diff_output.splitlines():
         if line.startswith('+++') or line.startswith('---'):

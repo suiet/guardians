@@ -1,0 +1,26 @@
+name: Update Top Domains
+on:
+  schedule:
+    - cron: "0 0 */14 * *" # Run at 00:00 UTC every 14 days
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Download top domains from Cloudflare
+        run: |
+          mkdir -p files/domains
+          curl -o files/domains/top-1m-domains.csv.zip "http://s3-us-west-1.amazonaws.com/umbrella-static/top-1m.csv.zip" \
+            && unzip -o files/domains/top-1m-domains.csv.zip -d files/domains/ \
+            && mv files/domains/top-1m.csv files/domains/top-1m-domains.csv
+
+      - name: Commit changes
+        run: |
+          git config --global user.email "github@suiet.app"
+          git config --global user.name "GitHub Actions"
+          git add files/domains/top-1m-domains.csv
+          git commit -m "Update top 1M domains" || echo "No changes to commit"
+          git push
