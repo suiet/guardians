@@ -2,3 +2,6 @@ google-account.json
 .env
 node_modules
 .DS_Store
+.venv
+src
+**/__pycache__/*
