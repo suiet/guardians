@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "src/**"
+      - "dist/**"
   workflow_dispatch: # allow manually trigger the action
 
 jobs:
@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@master
       - name: Validate JSON
         run: |
-          for file in ./src/*.json; do
+          for file in ./dist/*.json; do
             echo "Checking $file..."
             if ! jq empty $file; then
               echo "Invalid JSON in $file"
@@ -30,4 +30,4 @@ jobs:
           AWS_S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
-          SOURCE_DIR: "./src/"
+          SOURCE_DIR: "./dist/"

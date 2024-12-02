@@ -9,7 +9,7 @@ from loader.mysten import MystenLoader
 from loader.suiet import SuietLoader
 
 class SpreadsheetUpdater:
-    def __init__(self, spreadsheet_id, credentials_base64, loader, range_='Sheet1!A:H', output_dir='../src'):
+    def __init__(self, spreadsheet_id, credentials_base64, loader, range_='Sheet1!A:H', output_dir='../dist'):
         self.spreadsheet_id = spreadsheet_id
         self.credentials_base64 = credentials_base64
         self.loader = loader
@@ -71,17 +71,17 @@ if __name__ == '__main__':
     suiet_spreadsheet_id = os.environ.get('SUIET_SPREEDSHEET_ID')
 
     snapshot_dir = './snapshot'
-    src_dir = './src'
+    dist_dir = './dist'
 
-    # mkdir src directory if not exists
-    if not os.path.exists(src_dir):
-        os.makedirs(src_dir)
-    # load the snapshot files to src directory
+    # mkdir dist directory if not exists
+    if not os.path.exists(dist_dir):
+        os.makedirs(dist_dir)
+    # load the snapshot files to dist directory
     for filename in os.listdir(snapshot_dir):
         full_file_name = os.path.join(snapshot_dir, filename)
         if os.path.isfile(full_file_name):
-            shutil.copy(full_file_name, src_dir + '/' + filename)
-            print(f'Copied {filename} to {src_dir}')
+            shutil.copy(full_file_name, dist_dir + '/' + filename)
+            print(f'Copied {filename} to {dist_dir}')
 
     # Update from Mysten sheet
     mysten_updater = SpreadsheetUpdater(
