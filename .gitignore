@@ -3,5 +3,4 @@ google-account.json
 node_modules
 .DS_Store
 .venv
-src
 **/__pycache__/*
