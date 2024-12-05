@@ -42,4 +42,3 @@ jobs:
           git add .
           git commit -m "Auto-update from script" || echo "No changes to commit"
           git push
-            - name: Push
