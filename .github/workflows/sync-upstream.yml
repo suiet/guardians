@@ -20,6 +20,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4 # Use the GitHub checkout action to checkout code
         with:
+          token: ${{ secrets.GH_TOKEN }}
           persist-credentials: false # trigger the following actions. ref: https://github.com/orgs/community/discussions/25702#discussioncomment-6313966
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -41,3 +42,4 @@ jobs:
           git add .
           git commit -m "Auto-update from script" || echo "No changes to commit"
           git push
+            - name: Push
