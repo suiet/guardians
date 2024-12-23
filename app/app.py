@@ -53,6 +53,7 @@ class SpreadsheetUpdater:
 
             updated_blocklist = sorted(set(data.get('blocklist', []) + addresses))
             data['blocklist'] = updated_blocklist
+            data['allowlist'] = sorted(set(data.get('allowlist', [])))
 
             try:
                 with open(file_path, 'w', encoding='utf-8') as f:
