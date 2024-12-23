@@ -1,15 +1,4 @@
 {
-  "allowlist": [
-    "0x1eabed72c53feb3805120a081dc15963c204dc8d091542592abaf7a35689b2fb::position::Position",
-    "0x12d73de9a6bc3cb658ec9dc0fe7de2662be1cea5c76c092fcc3606048cdbac27::lp_burn::CetusLPBurnProof",
-    "0xb4f25230ba74837d8299e92951306100c4a532e8c48cc3d8828abe9b91c8b274::vault::TypusBidReceipt",
-    "0xb4f25230ba74837d8299e92951306100c4a532e8c48cc3d8828abe9b91c8b274::vault::TypusDepositReceipt",
-    "0xba0dd78bdd5d1b5f02a689444522ea9a79e1bc4cd4d8e6a57b59f3fbcae5e978::farm::StakeReceipt",
-    "0xd22b24490e0bae52676651b4f56660a5ff8022a2576e0089f79b3c88d44e08f0::suins_registration::SuinsRegistration",
-    "0xcfe2d87aa5712b67cad2732edb6a2201bfdf592377e5c0968b7cb02099bd8e21::ve_sca::VeScaKey",
-    "0x9bbd650b8442abb082c20f3bc95a9434a8d47b4bef98b0832dab57c1a8ba7123::alphapool::Receipt",
-    "0x3492c874c1e3b3e2984e8c41b589e642d4d0a5d6459e5a9cfc2d52fd7c89c267::position::Position"
-  ],
   "blocklist": [
     "0x00004e50828e5220f8647ad900b5b35c33f5ac40585b516f16f3e5e77ba6a4cf::cetusbonus7634::CETUS_BONUS_7634",
     "0x0000e51c097fa528a1dea649c03fd7e2a52a60091a323714f32ac9b5a28d4f26::reward4034::TICKET_4034",
@@ -37777,5 +37766,6 @@
     "0xfffc5fa0e58f0aa3803be4e05afe3692f943b687c3dd9f8b253dcb34a9fcfd54::cnsnft::TICKET_NFT",
     "0xfffe982e6230d068fbc43fa84fb5a0eb81b1a4efec7301be143f7d3384cd1f54::rnft::TICKET_NFT",
     "0xfffef9d95ad4e2b255188caab390b332fb846e4fc90c144d4f4aa107ba5836ad::rnft::TICKET_NFT"
-  ]
+  ],
+  "allowlist": []
 }
