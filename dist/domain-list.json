@@ -1,26 +1,5 @@
 {
-  "allowlist": [
-    "cetus.zone",
-    "scallop.io",
-    "naviprotocol.io",
-    "navi.ag",
-    "suilend.fi",
-    "bucketprotocol.io",
-    "turbos.finance",
-    "flowx.finance",
-    "kriya.finance",
-    "typus.finance",
-    "aftermath.finance",
-    "bluefin.io",
-    "haedal.xyz",
-    "volosui.com",
-    "volo.fi",
-    "alphafi.xyz",
-    "deepbook.tech",
-    "suins.io",
-    "suilink.io",
-    "sui.io"
-  ],
+  "allowlist": [],
   "blocklist": [
     "0-metemask.com",
     "0101.systems",
