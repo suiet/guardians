@@ -51,7 +51,7 @@ class SpreadsheetUpdater:
                 print(f'Error reading file for {type_}: {e}')
                 continue
 
-            data['allowlist'] = data['allowlist']
+            data['allowlist'] = sorted(set(data.get('allowlist', [])))
             updated_blocklist = sorted(set(data.get('blocklist', []) + addresses))
             data['blocklist'] = updated_blocklist
 
