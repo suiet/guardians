@@ -16,12 +16,12 @@ Phishing attacks have become increasingly common in the world of cryptocurrencie
 ### Bloom Filters
 For improved performance and reduced memory usage, we also provide Bloom filter versions of our block lists:
 
-- coin-list.bloom.json: Bloom filter configuration for coin types
-- object-list.bloom.json: Bloom filter configuration for objects
-- domain-list.bloom.json: Bloom filter configuration for domains
-- package-list.bloom.json: Bloom filter configuration for packages
+- coin-list.bloom.json: Bloom filter for coin types
+- object-list.bloom.json: Bloom filter for objects
+- domain-list.bloom.json: Bloom filter for domains
+- package-list.bloom.json: Bloom filter for packages
 
-Each Bloom filter file contains metadata about the filter configuration and a reference to its corresponding `.blm` file, which contains the actual filter data. The Bloom filters are configured with a false positive rate of 0.1%.
+Each Bloom filter file contains metadata about the filter configuration and the base64-encoded filter data. The Bloom filters are configured with a false positive rate of 0.1%.
 
 ## Accessing the Data
 
@@ -38,12 +38,6 @@ All content, including the block lists and Bloom filters, can be accessed direct
   - https://guardians.suiet.app/object-list.bloom.json
   - https://guardians.suiet.app/domain-list.bloom.json
   - https://guardians.suiet.app/package-list.bloom.json
-  
-- Bloom Filter Data Files:
-  - https://guardians.suiet.app/coin-list.blm
-  - https://guardians.suiet.app/object-list.blm
-  - https://guardians.suiet.app/domain-list.blm
-  - https://guardians.suiet.app/package-list.blm
 
 To clone the repository, use the following command:
 
