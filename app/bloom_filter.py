@@ -3,7 +3,7 @@ import json
 from probables import BloomFilter
 
 DIST_DIR = "./dist"
-ERROR_RATE = 0.001  # Adjust error rate as needed
+ERROR_RATE = 0.0001 
 
 def create_bloom_filter(blocklist, error_rate=0.001):
     """
