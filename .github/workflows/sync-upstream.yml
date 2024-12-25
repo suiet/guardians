@@ -35,6 +35,8 @@ jobs:
           GOOGLE_APPLICATION_CREDENTIALS_BASE64: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS_BASE64 }}
           MYSTEN_SPREEDSHEET_ID: ${{ secrets.MYSTEN_SPREEDSHEET_ID }}
           SUIET_SPREEDSHEET_ID: ${{ secrets.SUIET_SPREEDSHEET_ID }}
+      - name: Generate bloom filter
+        run: python ./app/bloom_filter.py
       - name: Commit changes
         run: |
           git config --global user.email "github@suiet.app"
