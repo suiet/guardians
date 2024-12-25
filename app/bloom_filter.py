@@ -49,7 +49,7 @@ def process_file(filename):
 
     # Output filename, e.g., coin-list-bloom.json
     base_name, ext = os.path.splitext(filename)
-    out_filename = f"{base_name}-bloom.json"
+    out_filename = f"{base_name}.bloom.json"
     out_filepath = os.path.join(DIST_DIR, out_filename)
 
     # Write new JSON file
