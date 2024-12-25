@@ -1,6 +1,8 @@
 import os
 import json
+import base64
 from probables import BloomFilter
+from io import BytesIO
 
 DIST_DIR = "./dist"
 ERROR_RATE = 0.0001 
@@ -19,11 +21,14 @@ def create_bloom_filter(blocklist, error_rate=0.001):
 
 def bloom_filter_to_json(bf: BloomFilter, filename: str):
     """
-    Convert a BloomFilter to a JSON-serializable structure.
+    Convert a BloomFilter to a JSON-serializable structure with base64 encoded data.
     """
-    bf.export(filename.replace('.json', '.blm'))
+    bio = BytesIO()
+    bf.export(bio)
+    bloom_base64 = base64.b64encode(bio.getvalue()).decode('utf-8')
+    
     return {
-        "file": filename.split('/')[-1].replace('.json', '.blm'),
+        "data": bloom_base64,
         "est_elements": bf.estimated_elements,
         "false_positive_rate": bf.false_positive_rate,
         "number_bits": bf.number_bits,
@@ -44,8 +49,8 @@ def process_file(filename):
     blocklist = data.get("blocklist", [])
     bf = create_bloom_filter(blocklist, ERROR_RATE)
 
-    # Serialize bloom filter to JSON
-    bf_json = bloom_filter_to_json(bf, os.path.join(DIST_DIR, filename))
+    # Serialize bloom filter to JSON with base64 encoded data
+    bf_json = bloom_filter_to_json(bf, filename)
 
     # Output filename, e.g., coin-list-bloom.json
     base_name, ext = os.path.splitext(filename)
