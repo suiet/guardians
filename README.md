@@ -8,11 +8,42 @@ Phishing attacks have become increasingly common in the world of cryptocurrencie
 
 ## Files
 
+### Block Lists
 - coin-list.json: This file contains a block list for coin types. Entities listed here are subject to prefix matching for identification and management purposes.
 - object-list.json: This file houses a block list for objects, including Non-Fungible Tokens (NFTs). Prefix matching principles are employed for effective identification and management of objects within projects.
 - domain-list.json: Here you'll find a block list for domain names. Prefix matching is applied to identify and manage domains efficiently.
 
-All content, including the block lists mentioned above, can be accessed directly via the https://guardians.suiet.app (e.g. <https://guardians.suiet.app/coin-list.json>)
+### Bloom Filters
+For improved performance and reduced memory usage, we also provide Bloom filter versions of our block lists:
+
+- coin-list.bloom.json: Bloom filter configuration for coin types
+- object-list.bloom.json: Bloom filter configuration for objects
+- domain-list.bloom.json: Bloom filter configuration for domains
+- package-list.bloom.json: Bloom filter configuration for packages
+
+Each Bloom filter file contains metadata about the filter configuration and a reference to its corresponding `.blm` file, which contains the actual filter data. The Bloom filters are configured with a false positive rate of 0.1%.
+
+## Accessing the Data
+
+All content, including the block lists and Bloom filters, can be accessed directly via https://guardians.suiet.app:
+
+- Block Lists:
+  - https://guardians.suiet.app/coin-list.json
+  - https://guardians.suiet.app/object-list.json
+  - https://guardians.suiet.app/domain-list.json
+  - https://guardians.suiet.app/package-list.json
+
+- Bloom Filters:
+  - https://guardians.suiet.app/coin-list.bloom.json
+  - https://guardians.suiet.app/object-list.bloom.json
+  - https://guardians.suiet.app/domain-list.bloom.json
+  - https://guardians.suiet.app/package-list.bloom.json
+  
+- Bloom Filter Data Files:
+  - https://guardians.suiet.app/coin-list.blm
+  - https://guardians.suiet.app/object-list.blm
+  - https://guardians.suiet.app/domain-list.blm
+  - https://guardians.suiet.app/package-list.blm
 
 To clone the repository, use the following command:
 
@@ -23,6 +54,8 @@ git clone https://github.com/your-username/your-repo.git
 ## How It Works
 
 Guardians maintains a blocklist of known phishing websites targeting Suiet users. This blocklist is updated regularly to ensure that users are protected from the latest threats. When a user accesses a website through the Suiet wallet, the URL is checked against the list. If the URL is found on the list, the user is warned and redirected to a safe page.
+
+For efficient lookups, we use Bloom filters - a space-efficient probabilistic data structure that allows for quick membership testing. While Bloom filters may occasionally produce false positives, they never produce false negatives, making them ideal for our security-focused application. Our Bloom filters are configured with a 0.1% false positive rate to maintain high accuracy while minimizing resource usage.
 
 ## Contributing
 
