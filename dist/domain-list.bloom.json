@@ -1,7 +1,7 @@
 {
   "file": "domain-list.blm",
   "est_elements": 46757,
-  "false_positive_rate": 0.0010000000474974513,
-  "number_bits": 672253,
-  "number_hashes": 10
+  "false_positive_rate": 9.999999747378752e-05,
+  "number_bits": 896338,
+  "number_hashes": 13
 }
