@@ -9566,6 +9566,7 @@
     "0x400ae62be11350fe0c51d884f4f8e107a0c848a76e3111e897698ef27db4cb29::nft_claim::DEEPClaimNFT",
     "0x400b7f23b8e145ddab19175f7b5e70907fa55dc4aad98061feb08edaee63e4d3::cat_nft::CatNFT",
     "0x400bf868cecfe783b7c364f8a65616d1e33bb2b94f44c2312cc6f4e10d891430::rnft::TICKET_NFT",
+    "0x400ce357e13020d568f45fa45a62cc6b5bb165968898dc0ba3983fc7f034c77f::nft_claim::SendClaimNFT",
     "0x400dbab145ecfe36dbd216433c5d90ef5cb4d20923439f505be69d5db096bd75::frosty::Hero",
     "0x400e2752f43a5f67040dc7eb16f8e41c4ccdc9c654d649d326aed7406579c1df::nft_claim::DEEPClaimNFT",
     "0x400f61847349ff1b1c57ddd42d4075e4c934f6012227435ef752643374832c60::frosty::Hero",
