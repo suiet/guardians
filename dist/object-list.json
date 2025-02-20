@@ -2,18 +2,13 @@
   "allowlist": [
     "0x12d73de9a6bc3cb658ec9dc0fe7de2662be1cea5c76c092fcc3606048cdbac27::lp_burn::CetusLPBurnProof",
     "0x1eabed72c53feb3805120a081dc15963c204dc8d091542592abaf7a35689b2fb::position::Position",
-    "0x1fbf3e1c49c8eb6cdc960c42df75b5eaacb65070b2cd2e2505159992d57ab27b::deliver::GalxeNFT",
     "0x3492c874c1e3b3e2984e8c41b589e642d4d0a5d6459e5a9cfc2d52fd7c89c267::position::Position",
-    "0x5d9865999eb9a4a5d7cb6615260e42c6400aec1b34cfbb2070005925e673e92e::deliver::GalxeNFT",
-    "0x98af8b8fde88f3c4bdf0fcedcf9afee7d10f66d480b74fb5a3a2e23dc7f5a564::airdrop::WALAirdrop",
     "0x9bbd650b8442abb082c20f3bc95a9434a8d47b4bef98b0832dab57c1a8ba7123::alphapool::Receipt",
     "0xb4f25230ba74837d8299e92951306100c4a532e8c48cc3d8828abe9b91c8b274::vault::TypusBidReceipt",
     "0xb4f25230ba74837d8299e92951306100c4a532e8c48cc3d8828abe9b91c8b274::vault::TypusDepositReceipt",
     "0xba0dd78bdd5d1b5f02a689444522ea9a79e1bc4cd4d8e6a57b59f3fbcae5e978::farm::StakeReceipt",
-    "0xc0f18c0544cc650c879914a9c4e28a1a886967f6e8806ba992e1d54359bc0e80::deliver::GalxeNFT",
     "0xcfe2d87aa5712b67cad2732edb6a2201bfdf592377e5c0968b7cb02099bd8e21::ve_sca::VeScaKey",
     "0xd22b24490e0bae52676651b4f56660a5ff8022a2576e0089f79b3c88d44e08f0::suins_registration::SuinsRegistration"
-    
   ],
   "blocklist": [
     "0x00004e50828e5220f8647ad900b5b35c33f5ac40585b516f16f3e5e77ba6a4cf::cetusbonus7634::CETUS_BONUS_7634",
@@ -28661,6 +28656,7 @@
     "0xc0eb8fec641b7a6a2bd3fcda13cace4a86fb67c42bdd3eb72b41975cc60c711d::nft_claim::DEEPClaimNFT",
     "0xc0ec19368d5fbe8ca9a212d6f2d2830891737c86bca9b5d8d9237fa1d8d8591e::cnsnft3308::TICKET_NFT",
     "0xc0f05c0907130673fe39bbcdfd5076dc121bd2983ee8210dc34fd341e5aa992a::reward6390::TICKET_6390",
+    "0xc0f18c0544cc650c879914a9c4e28a1a886967f6e8806ba992e1d54359bc0e80::deliver::GalxeNFT",
     "0xc0f1ecdb5f4bb3469c4563bb44ffde43ce69d88101dd8feec3d07a8a0945f33a::nft_claim::DEEPClaimNFT",
     "0xc0f3c16aaf3a6a0285a693dd37ef8dfa329f039258d78a794372ca90dfe94ec2::nft_claim::DEEPClaimNFT",
     "0xc0f73543941df7e491924ce58fec9241f2fdf7565c3763aae9229f7f11eb3075::cnsnft::TICKET_NFT",
