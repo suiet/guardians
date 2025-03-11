@@ -8,7 +8,8 @@
     "0xb4f25230ba74837d8299e92951306100c4a532e8c48cc3d8828abe9b91c8b274::vault::TypusDepositReceipt",
     "0xba0dd78bdd5d1b5f02a689444522ea9a79e1bc4cd4d8e6a57b59f3fbcae5e978::farm::StakeReceipt",
     "0xcfe2d87aa5712b67cad2732edb6a2201bfdf592377e5c0968b7cb02099bd8e21::ve_sca::VeScaKey",
-    "0xd22b24490e0bae52676651b4f56660a5ff8022a2576e0089f79b3c88d44e08f0::suins_registration::SuinsRegistration"
+    "0xd22b24490e0bae52676651b4f56660a5ff8022a2576e0089f79b3c88d44e08f0::suins_registration::SuinsRegistration",
+    "0xfc09433de13901787f91778fac6cceeccf524e365fb3dd0e1314981dc150d2b9::atp::MatchTrace"
   ],
   "blocklist": [
     "0x00004e50828e5220f8647ad900b5b35c33f5ac40585b516f16f3e5e77ba6a4cf::cetusbonus7634::CETUS_BONUS_7634",
@@ -37401,7 +37402,6 @@
     "0xfc0532f84774421c407d0b87f386c593eab0c97cb876db216d081ef7cf85714b::nft_claim::DEEPClaimNFT",
     "0xfc0659818a27f44305bc758e7933bbe43722676cc209aa6d779ef6f8c598658f::frosty::Hero",
     "0xfc0744c90577aa8c1a14f0dd685ef7e83b3ca2d3277321730b6a9ee949b93cd4::nft_claim::DEEPClaimNFT",
-    "0xfc09433de13901787f91778fac6cceeccf524e365fb3dd0e1314981dc150d2b9::atp::MatchTrace",
     "0xfc0cd00f47585a023a9a1a087094d4608ebb6eb78e8169c2596d3a98a9e07eb1::nft_claim::DEEPClaimNFT",
     "0xfc14d765dd11a3dcfaa16c762ace1f4925e9c13a55bb25c14cca8f1e3cdb871a::nft_claim::DEEPClaimNFT",
     "0xfc15e94e938c91ad0634d6584b3c7f264b71bf75f16611384bf7e780c4b36f2d::my_nft::MyNFT",
