@@ -18,12 +18,12 @@ jobs:
       MYSTEN_SPREEDSHEET_ID: ${{ secrets.MYSTEN_SPREEDSHEET_ID }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4 # Use the GitHub checkout action to checkout code
+        uses: actions/checkout@v5 # Use the GitHub checkout action to checkout code
         with:
           token: ${{ secrets.GH_TOKEN }}
 #          persist-credentials: false # trigger the following actions. ref: https://github.com/orgs/community/discussions/25702#discussioncomment-6313966
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.13"
       - name: Install dependencies
